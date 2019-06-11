@@ -18,5 +18,7 @@ get '/supersecret' do
 end
 
 get '/cat' do
+  @greet_with_name = ["Mittens", "Tiddles", "Viking"].sample
   erb(:index)
 end
+
