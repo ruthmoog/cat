@@ -22,8 +22,12 @@ get '/random-cat' do
   erb(:index)
 end
 
-get '/named-cat' do
+post '/named-cat' do
   p params
   @greet_with_name = params[:name]
   erb :index
+end
+
+get '/naming-form' do
+  erb :naming_form
 end
