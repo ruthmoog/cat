@@ -3,3 +3,11 @@
 <% end %>
 
 <img src='http://bit.ly/1eze8aE' style='border:dashed; color:red;' />
+
+<% if !@greet_with_name %>
+  <form action="/named-cat">
+    <label for="name">I need a name:</label>
+    <input type="text" name="name" />
+    <input type="submit" value="Push the button" />
+  </form>
+<% end %>
