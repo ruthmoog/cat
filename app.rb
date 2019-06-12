@@ -24,6 +24,6 @@ end
 
 get '/named-cat' do
   p params
-  @greet_with_name = params[:name] + " " + params[:surname]
-  erb(:index)
+  @greet_with_name = params[:name]
+  erb :index
 end
